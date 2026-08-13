@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:fish_taco"
+      "item": "culturaldelights:pork_wrap"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         },
         {
-          "tag": "c:foods/cooked_fishes"
+          "tag": "c:foods/cooked_pork"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         },
         {
-          "tag": "c:salad_ingredients"
+          "tag": "c:foods/leafy_green"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         },
         {
-          "item": "farmersdelight:tomato"
+          "item": "minecraft:apple"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_fish_taco"
+          "item": "culturalcreators:incomplete_pork_wrap"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "culturalcreators:incomplete_fish_taco"
+    "item": "culturalcreators:incomplete_pork_wrap"
   }
 }

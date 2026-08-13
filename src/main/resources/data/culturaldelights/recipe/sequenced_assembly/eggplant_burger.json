@@ -7,7 +7,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "c:foods/breads"
+    "tag": "c:foods/bread"
   },
   "loops": 1,
   "results": [
@@ -23,7 +23,7 @@
           "item": "culturalcreators:incomplete_eggplant_burger"
         },
         {
-          "tag": "culturaldelights:smoked_regular_eggplants"
+          "tag": "c:foods/cooked_eggplant"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "culturalcreators:incomplete_eggplant_burger"
         },
         {
-          "tag": "c:salad_ingredients"
+          "tag": "c:foods/leafy_green"
         }
       ],
       "results": [

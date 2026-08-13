@@ -23,7 +23,7 @@
           "item": "culturalcreators:incomplete_beef_burrito"
         },
         {
-          "tag": "c:foods/cooked_meats/cooked_beef"
+          "tag": "c:foods/cooked_beef"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "culturalcreators:incomplete_beef_burrito"
         },
         {
-          "tag": "culturaldelights:avocados"
+          "tag": "c:foods/avocado"
         }
       ],
       "results": [

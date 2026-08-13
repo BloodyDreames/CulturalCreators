@@ -50,7 +50,7 @@ public abstract class ModFluidsTemplate extends FlowableFluid {
     }
 
     @Override
-    protected int getFlowSpeed(WorldView worldView) {
+    protected int getMaxFlowDistance(WorldView worldView) {
         return 2;
     }
 

@@ -7,12 +7,12 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bread"
+    "item": "culturaldelights:tortilla"
   },
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:mutton_sandwich"
+      "item": "culturaldelights:fish_taco"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         },
         {
-          "tag": "c:foods/cooked_meats/cooked_mutton"
+          "tag": "c:foods/cooked_fish"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         },
         {
-          "item": "farmersdelight:fried_egg"
+          "tag": "c:foods/leafy_green"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         },
         {
-          "item": "minecraft:beetroot"
+          "item": "farmersdelight:tomato"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "item": "culturalcreators:incomplete_fish_taco"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "culturalcreators:incomplete_mutton_sandwich"
+    "item": "culturalcreators:incomplete_fish_taco"
   }
 }

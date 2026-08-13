@@ -7,12 +7,12 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "culturaldelights:tortilla"
+    "item": "minecraft:bread"
   },
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:pork_wrap"
+      "item": "culturaldelights:mutton_sandwich"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         },
         {
-          "tag": "c:foods/cooked_meats/cooked_pork"
+          "tag": "c:foods/cooked_mutton"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         },
         {
-          "tag": "c:salad_ingredients"
+          "item": "farmersdelight:fried_egg"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         },
         {
-          "item": "minecraft:apple"
+          "item": "minecraft:beetroot"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_pork_wrap"
+          "item": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "culturalcreators:incomplete_pork_wrap"
+    "item": "culturalcreators:incomplete_mutton_sandwich"
   }
 }

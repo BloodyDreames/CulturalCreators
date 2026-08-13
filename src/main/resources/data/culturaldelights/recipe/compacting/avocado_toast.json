@@ -8,7 +8,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "tag": "culturaldelights:avocados"
+      "tag": "c:foods/avocado"
     },
     {
       "item": "minecraft:bread"
