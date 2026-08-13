@@ -7,7 +7,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "c:bread"
+    "tag": "c:foods/breads"
   },
   "loops": 1,
   "results": [

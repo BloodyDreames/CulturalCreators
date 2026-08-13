@@ -7,26 +7,32 @@
 
 [![](https://cf.way2muchnoise.eu/873936.svg?badge_style=for_the_badge)][CURSEFORGE]
 [![](https://img.shields.io/modrinth/dt/jmJ87gsb?color=brightgreen&logo=modrinth&logoColor=brightgreen&style=for-the-badge)][MODRINTH]
- 
+ 
 # About:
-Cutural Creators is an addon for Cultural Delights and Create which adds new recipes using Create. Currently adds new fluids and recipes, which are useful on modpacks.
+Cutural Creators is an addon for Cultural Delights and Create which adds new recipes using Create. Currently adds new fluids and recipes, which are useful on modpacks.
 
 For the mod to work, it is recommended to install Delightful Creators which combines Farmer's Delight and Create.
 
+# Versions:
+| Minecraft | Loader | Branch |
+| --- | --- | --- |
+| 1.20.1 | Fabric | `fabric/1.20.1` |
+| 1.20.1 | Forge / NeoForge 47.x | `forge/1.20.1` |
+| 1.21.1 | Fabric | `fabric/1.21.1` |
+| 1.21.1 | NeoForge | `neoforge/1.21.1` |
+
 # Current Content:
 - New incomplete food for Sequenced Assembly.
-- New fluids for curry, etc.
+- New fluids for curry, etc.
 - Recipes for tortilla chips and avocado toasts.
 - Recipe for fried eggplant pasta.
 
 ## Quick Start
-1. Install Forge Loader (MC 1.XX).
+1. Install Fabric Loader (MC 1.20.1).
 2. Drop Farmer's Delight, Cultural Delights and Create JARs into `mods/`.
 3. Drop JAR into `mods/`.
 4. Launch and explore new farming options.
 
 # Localization:
-- English (en_us) - Flomik
+- English (en_us) - Flomik
 - Russian (ru_ru) - Flomik
- 
-

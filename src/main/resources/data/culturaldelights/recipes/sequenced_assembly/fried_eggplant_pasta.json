@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "values": ["create", "farmersdelight", "culturaldelights", "delightfulcreators"]
     }
   ],
   "type": "create:sequenced_assembly",

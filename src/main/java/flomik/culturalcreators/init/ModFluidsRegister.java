@@ -35,9 +35,7 @@ public class ModFluidsRegister {
                 new FluidBlock(ModFluidsRegister.STILL_CREAMED_CORN, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         CREAMED_CORN_BUCKET = Registry.register(Registries.ITEM, new Identifier(CulturalCreatorsMod.MOD_ID, "creamed_corn_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_CREAMED_CORN, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
-    }
 
-    public static void registerModFluids() {
         CulturalCreatorsMod.LOGGER.debug("Registering Mod Fluids for " + CulturalCreatorsMod.MOD_ID);
     }
 }

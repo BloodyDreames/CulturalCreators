@@ -30,11 +30,6 @@ public abstract class CreamedCornFluid extends ModFluidsTemplate {
         return ModFluidsRegister.CREAMED_CORN_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
-    @Override
-    public boolean matchesType(Fluid fluid) {
-        return fluid == getStill() || fluid == getFlowing();
-    }
-
     public static class Flowing extends CreamedCornFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
