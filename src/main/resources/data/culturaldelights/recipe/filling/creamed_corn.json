@@ -1,9 +1,17 @@
 {
   "type": "create:filling",
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "ingredients": [
@@ -11,13 +19,14 @@
       "item": "minecraft:bowl"
     },
     {
+      "type": "neoforge:single",
       "fluid": "culturalcreators:creamed_corn",
-      "amount": 27000
+      "amount": 333
     }
   ],
   "results": [
     {
-      "item": "culturaldelights:creamed_corn"
+      "id": "culturaldelights:creamed_corn"
     }
   ]
 }

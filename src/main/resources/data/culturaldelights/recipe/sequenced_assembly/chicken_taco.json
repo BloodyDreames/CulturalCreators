@@ -1,8 +1,20 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights", "delightfulcreators"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "delightfulcreators"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +24,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:chicken_taco"
+      "id": "culturaldelights:chicken_taco"
     }
   ],
   "sequence": [
@@ -28,7 +40,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_chicken_taco"
+          "id": "culturalcreators:incomplete_chicken_taco"
         }
       ]
     },
@@ -44,7 +56,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_chicken_taco"
+          "id": "culturalcreators:incomplete_chicken_taco"
         }
       ]
     },
@@ -60,7 +72,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_chicken_taco"
+          "id": "culturalcreators:incomplete_chicken_taco"
         }
       ]
     },
@@ -71,12 +83,12 @@
           "item": "culturalcreators:incomplete_chicken_taco"
         },
         {
-          "tag": "c:crops/cucumbers"
+          "tag": "culturaldelights:cucumbers"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_chicken_taco"
+          "id": "culturalcreators:incomplete_chicken_taco"
         }
       ]
     },
@@ -87,18 +99,19 @@
           "item": "culturalcreators:incomplete_chicken_taco"
         },
         {
+          "type": "neoforge:single",
           "fluid": "delightfulcreators:tomato_sauce",
-          "amount": 20250
+          "amount": 250
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_chicken_taco"
+          "id": "culturalcreators:incomplete_chicken_taco"
         }
       ]
     }
   ],
-  "transitionalItem": {
-    "item": "culturalcreators:incomplete_chicken_taco"
+  "transitional_item": {
+    "id": "culturalcreators:incomplete_chicken_taco"
   }
 }

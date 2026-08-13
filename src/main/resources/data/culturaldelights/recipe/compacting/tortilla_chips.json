@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:compacting",
@@ -13,7 +21,7 @@
   ],
   "results": [
     {
-      "item": "culturaldelights:tortilla_chips",
+      "id": "culturaldelights:tortilla_chips",
       "count": 4
     }
   ]

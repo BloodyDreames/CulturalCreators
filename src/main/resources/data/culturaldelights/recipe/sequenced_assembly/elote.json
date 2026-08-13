@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +20,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:elote"
+      "id": "culturaldelights:elote"
     }
   ],
   "sequence": [
@@ -28,7 +36,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_elote"
+          "id": "culturalcreators:incomplete_elote"
         }
       ]
     },
@@ -39,18 +47,19 @@
           "item": "culturalcreators:incomplete_elote"
         },
         {
-          "fluidTag": "c:milk",
-          "amount": 20250
+          "type": "neoforge:tag",
+          "tag": "c:milk",
+          "amount": 250
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_elote"
+          "id": "culturalcreators:incomplete_elote"
         }
       ]
     }
   ],
-  "transitionalItem": {
-    "item": "culturalcreators:incomplete_elote"
+  "transitional_item": {
+    "id": "culturalcreators:incomplete_elote"
   }
 }

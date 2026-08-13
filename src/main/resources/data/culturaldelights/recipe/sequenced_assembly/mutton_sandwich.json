@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +20,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:mutton_sandwich"
+      "id": "culturaldelights:mutton_sandwich"
     }
   ],
   "sequence": [
@@ -28,7 +36,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "id": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     },
@@ -44,7 +52,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "id": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     },
@@ -60,12 +68,12 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_mutton_sandwich"
+          "id": "culturalcreators:incomplete_mutton_sandwich"
         }
       ]
     }
   ],
-  "transitionalItem": {
-    "item": "culturalcreators:incomplete_mutton_sandwich"
+  "transitional_item": {
+    "id": "culturalcreators:incomplete_mutton_sandwich"
   }
 }

@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +20,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "culturaldelights:eggplant_burger"
+      "id": "culturaldelights:eggplant_burger"
     }
   ],
   "sequence": [
@@ -23,12 +31,12 @@
           "item": "culturalcreators:incomplete_eggplant_burger"
         },
         {
-          "tag": "c:foods/cooked_eggplant"
+          "tag": "culturaldelights:smoked_regular_eggplants"
         }
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_eggplant_burger"
+          "id": "culturalcreators:incomplete_eggplant_burger"
         }
       ]
     },
@@ -44,7 +52,7 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_eggplant_burger"
+          "id": "culturalcreators:incomplete_eggplant_burger"
         }
       ]
     },
@@ -60,12 +68,12 @@
       ],
       "results": [
         {
-          "item": "culturalcreators:incomplete_eggplant_burger"
+          "id": "culturalcreators:incomplete_eggplant_burger"
         }
       ]
     }
   ],
-  "transitionalItem": {
-    "item": "culturalcreators:incomplete_eggplant_burger"
+  "transitional_item": {
+    "id": "culturalcreators:incomplete_eggplant_burger"
   }
 }

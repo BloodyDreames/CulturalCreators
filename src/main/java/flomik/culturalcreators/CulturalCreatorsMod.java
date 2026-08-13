@@ -3,18 +3,19 @@ package flomik.culturalcreators;
 import flomik.culturalcreators.init.ModFluidsRegister;
 import flomik.culturalcreators.init.ModItemsRegister;
 import flomik.culturalcreators.item.ModItemsGroup;
-import net.fabricmc.api.ModInitializer;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CulturalCreatorsMod implements ModInitializer {
+@Mod(CulturalCreatorsMod.MOD_ID)
+public class CulturalCreatorsMod {
     public static final String MOD_ID = "culturalcreators";
     public static final Logger LOGGER = LoggerFactory.getLogger("Cultural Creators");
 
-    @Override
-    public void onInitialize() {
-        ModFluidsRegister.register();
-        ModItemsRegister.registerModItems();
-        ModItemsGroup.registerModItemGroup();
+    public CulturalCreatorsMod(IEventBus modEventBus) {
+        ModFluidsRegister.register(modEventBus);
+        ModItemsRegister.register(modEventBus);
+        ModItemsGroup.register(modEventBus);
     }
 }
