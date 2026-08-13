@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:mixing",
@@ -15,14 +23,14 @@
       "item": "culturaldelights:corn_cob"
     },
     {
-      "amount": 20250,
-      "fluidTag": "c:milk"
+      "amount": 250,
+      "fluidTag": "forge:milk"
     }
   ],
   "results": [
     {
       "fluid": "culturalcreators:creamed_corn",
-      "amount": 27000
+      "amount": 333
     }
   ]
 }

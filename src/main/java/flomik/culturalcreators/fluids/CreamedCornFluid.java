@@ -1,63 +1,35 @@
 package flomik.culturalcreators.fluids;
 
-import flomik.culturalcreators.init.ModFluidsRegister;
-import net.minecraft.block.BlockState;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.item.Item;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.Properties;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
 
-public abstract class CreamedCornFluid extends ModFluidsTemplate {
+public class CreamedCornFluid {
 
-    @Override
-    public Fluid getStill() {
-        return ModFluidsRegister.STILL_CREAMED_CORN;
-    }
-
-    @Override
-    public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_CREAMED_CORN;
-    }
-
-    @Override
-    public Item getBucketItem() {
-        return ModFluidsRegister.CREAMED_CORN_BUCKET;
-    }
-
-    @Override
-    protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.CREAMED_CORN_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
-    }
-
-    public static class Flowing extends CreamedCornFluid {
-        @Override
-        protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
-            super.appendProperties(builder);
-            builder.add(LEVEL);
+    public static class Source extends ForgeFlowingFluid.Source {
+        public Source(Properties properties) {
+            super(properties);
         }
 
         @Override
-        public int getLevel(FluidState state) {
-            return state.get(LEVEL);
-        }
-
-        @Override
-        public boolean isStill(FluidState state) {
+        protected boolean canBeReplacedWith(FluidState state, BlockGetter level, BlockPos pos,
+                                            Fluid fluid, Direction direction) {
             return false;
         }
-
     }
 
-    public static class Still extends CreamedCornFluid {
-        @Override
-        public int getLevel(FluidState state) {
-            return 8;
+    public static class Flowing extends ForgeFlowingFluid.Flowing {
+        public Flowing(Properties properties) {
+            super(properties);
         }
 
         @Override
-        public boolean isStill(FluidState state) {
-            return true;
+        protected boolean canBeReplacedWith(FluidState state, BlockGetter level, BlockPos pos,
+                                            Fluid fluid, Direction direction) {
+            return false;
         }
     }
 }

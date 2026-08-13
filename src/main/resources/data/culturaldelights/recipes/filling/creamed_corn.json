@@ -1,9 +1,17 @@
 {
   "type": "create:filling",
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "ingredients": [
@@ -12,7 +20,7 @@
     },
     {
       "fluid": "culturalcreators:creamed_corn",
-      "amount": 27000
+      "amount": 333
     }
   ],
   "results": [

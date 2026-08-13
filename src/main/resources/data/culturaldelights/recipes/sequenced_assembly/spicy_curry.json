@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -39,7 +47,7 @@
           "item": "culturalcreators:incomplete_spicy_curry"
         },
         {
-          "tag": "c:foods/cooked_meats/cooked_chicken"
+          "tag": "forge:cooked_chicken"
         }
       ],
       "results": [
@@ -87,8 +95,8 @@
           "item": "culturalcreators:incomplete_spicy_curry"
         },
         {
-          "fluidTag": "c:milk",
-          "amount": 20250
+          "fluidTag": "forge:milk",
+          "amount": 250
         }
       ],
       "results": [

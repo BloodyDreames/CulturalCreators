@@ -1,0 +1,57 @@
+modLoader="javafml"
+loaderVersion="${forge_version_range}"
+license="CC0-1.0"
+issueTrackerURL="https://github.com/Flomik10002/CulturalCreatorsFabric/issues"
+
+[[mods]]
+modId="culturalcreators"
+version="${version}"
+displayName="Cultural Creators"
+displayURL="https://github.com/Flomik10002/CulturalCreatorsFabric"
+logoFile="assets/culturalcreators/icon.png"
+authors="Flomik"
+description='''
+Making automation between Culturals Delight and Create
+'''
+
+[[dependencies.culturalcreators]]
+	modId="forge"
+	mandatory=true
+	versionRange="${forge_version_range}"
+	ordering="NONE"
+	side="BOTH"
+
+[[dependencies.culturalcreators]]
+	modId="minecraft"
+	mandatory=true
+	versionRange="[1.20.1,1.21)"
+	ordering="NONE"
+	side="BOTH"
+
+[[dependencies.culturalcreators]]
+	modId="create"
+	mandatory=false
+	versionRange="*"
+	ordering="AFTER"
+	side="BOTH"
+
+[[dependencies.culturalcreators]]
+	modId="farmersdelight"
+	mandatory=false
+	versionRange="*"
+	ordering="AFTER"
+	side="BOTH"
+
+[[dependencies.culturalcreators]]
+	modId="culturaldelights"
+	mandatory=false
+	versionRange="*"
+	ordering="AFTER"
+	side="BOTH"
+
+[[dependencies.culturalcreators]]
+	modId="delightfulcreators"
+	mandatory=false
+	versionRange="*"
+	ordering="AFTER"
+	side="BOTH"

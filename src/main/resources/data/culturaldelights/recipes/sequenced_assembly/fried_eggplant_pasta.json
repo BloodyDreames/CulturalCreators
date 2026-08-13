@@ -1,8 +1,20 @@
 {
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights", "delightfulcreators"]
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "culturaldelights"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "delightfulcreators"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -40,7 +52,7 @@
         },
         {
           "fluid": "delightfulcreators:tomato_sauce",
-          "amount": 20250
+          "amount": 250
         }
       ],
       "results": [

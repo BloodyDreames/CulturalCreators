@@ -28,7 +28,7 @@ For the mod to work, it is recommended to install Delightful Creators which comb
 - Recipe for fried eggplant pasta.
 
 ## Quick Start
-1. Install Fabric Loader (MC 1.20.1).
+1. Install Forge or NeoForge 47.x (MC 1.20.1).
 2. Drop Farmer's Delight, Cultural Delights and Create JARs into `mods/`.
 3. Drop JAR into `mods/`.
 4. Launch and explore new farming options.

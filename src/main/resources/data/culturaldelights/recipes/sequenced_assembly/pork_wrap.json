@@ -1,8 +1,16 @@
 {
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight", "culturaldelights"]
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "culturaldelights"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -23,7 +31,7 @@
           "item": "culturalcreators:incomplete_pork_wrap"
         },
         {
-          "tag": "c:foods/cooked_meats/cooked_pork"
+          "tag": "forge:cooked_pork"
         }
       ],
       "results": [
@@ -39,7 +47,7 @@
           "item": "culturalcreators:incomplete_pork_wrap"
         },
         {
-          "tag": "c:salad_ingredients"
+          "tag": "forge:salad_ingredients"
         }
       ],
       "results": [
